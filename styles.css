@@ -43,3 +43,31 @@ body {
     border-radius: 50px;
     font-size: 36px;
 }
+
+.container-botoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.calculadora button{
+    height: 65px;
+    width: 65px;
+    
+    background-color: var(--white);
+    border-radius: 50%;
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.calculadora button:hover{
+    background-color: black;
+    color: var(--white);
+}
+
+.calculadora button:active{
+    transform: scale(0.8);
+}
